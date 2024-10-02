@@ -1,0 +1,32 @@
+[
+  {
+    "type": "bank-draft",
+    "title": "Bank Draft",
+    "position": "0",
+    "gif_url": "https://media.giphy.com/media/xThuWfv8oUKoZubGec/giphy.gif?cid=790b7611wsjbmrhg7txef2clh8ro8zhec72eeeophgqed0m7&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+  },
+  {
+    "type": "bill-of-lading",
+    "title": "Bill of Lading",
+    "position": "1",
+    "gif_url": "https://media.giphy.com/media/4DDEKVWRmcGNWyi8VD/giphy.gif?cid=ecf05e475znajre435nttm19ar1r296v2kjmsplc8ozgsf3o&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+  },
+  {
+    "type": "invoice",
+    "title": "Invoice",
+    "position": "2",
+    "gif_url": "https://media.giphy.com/media/afHzziWURgU3m/giphy.gif?cid=ecf05e475znajre435nttm19ar1r296v2kjmsplc8ozgsf3o&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+  },
+  {
+    "type": "bank-draft-2",
+    "title": "Bank Draft 2",
+    "position": "3",
+    "gif_url": "https://media.giphy.com/media/26ybvWFlBdMXvLnNK/giphy.gif?cid=ecf05e47n3a1f5mu5kztggnfo3cz1g8lo44wp323m1gvoavq&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+  },
+  {
+    "type": "bill-of-lading-2",
+    "title": "Bill of Lading 2",
+    "position": "4",
+    "gif_url": "https://media.giphy.com/media/B9yZoOyHyZ1ni/giphy.gif?cid=ecf05e471ai5ijt87ruwcu9sou7qy2fvswuym65samglko0g&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+  }
+]
