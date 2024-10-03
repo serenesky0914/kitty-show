@@ -46,7 +46,7 @@ npm install
 ```
 npm run dev
 ```
-You can run and check the result http://localhost:5174/
+You can run and check the result http://localhost:3000/
 ### Run storybook
 ```
 npm run storybook
