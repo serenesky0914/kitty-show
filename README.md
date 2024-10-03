@@ -2,13 +2,14 @@
 ## Getting Started
 ### Prerequisites
 - Ensure you have the following installed:
-    - Python 3.9 or later
+    - Python 3.10 or later
     - PostgreSQL
 ### Installation
 1. Clone the repository:
     ```bash
-    git clone https://github.com/bla/alalala
-    cd afaf
+    git clone https://github.com/serenesky0914/kitty-show.git
+    cd kitty-show
+    cd kitty_backend
 2. Set up a virtual environment:
     ```bash
     python3 -m venv venv
