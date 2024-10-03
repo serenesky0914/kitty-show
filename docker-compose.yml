@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:14
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: kitty
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+    ports:
+      - "5432:5432"
+
+  backend:
+    build:
+      context: ./kitty_backend
+    command: uvicorn app:app --host 0.0.0.0 --port 8000
+
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    env_file:
+      - ./kitty_backend/.env
+
+  frontend:
+    build:
+      context: ./kitty_frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+volumes:
+  postgres_data:
