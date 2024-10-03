@@ -15,6 +15,7 @@ import { CardData } from "./Interface/types";
 import Card from "./components/Card";
 import Modal from "./components/Modal";
 import { SortableItem } from "./components/SortableItem";
+import { fetchDocuments } from "./api/api";
 
 const App = () => {
   const [cards, setCards] = useState<CardData[]>([]);
@@ -29,9 +30,16 @@ const App = () => {
   );
 
   useEffect(() => {
-    fetch("/data.json")
-      .then((response) => response.json())
-      .then((data: CardData[]) => setCards(data));
+    const loadDocuments = async () => {
+      try {
+        const data = await fetchDocuments();
+        setCards(data);
+      } catch (error) {
+        console.log(error)
+      }
+    };
+
+    loadDocuments();
   }, []);
 
   const handleCardClick = (item: CardData) => {
